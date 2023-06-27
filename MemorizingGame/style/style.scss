@@ -1,0 +1,100 @@
+* {
+  font-family: "Nunito";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 85%;
+  .title {
+    display: flex;
+
+    img {
+      max-width: 3em;
+    }
+  }
+  #score {
+    padding: 0px;
+    margin: 0px;
+    color: #6c90ac;
+  }
+  h4 {
+    margin: 3px;
+  }
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  // border: 2px solid green;
+  height: 50%;
+  width: 85%;
+  .card {
+    border: 2px solid #e0e0e0;
+    box-sizing: border-box;
+    // 卡片在容器裡面的排版 4*13 cards
+    /* flex：flex-grow | flex-shrink | flex-basis */
+    //7% 是 畫面寬度100/13張牌 = 7.7 ，剩下空間留給margin
+    flex: 1 1 7%;
+    margin: 2px;
+    height: 8vw;
+    //卡面裡面的排版 分三個區塊(數字 圖片 倒過來的數字)
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    img {
+      max-width: 30%;
+      align-self: center;
+    }
+    p {
+      margin: 3px;
+      font-size: 20px;
+    }
+    p:last-child {
+      transform: rotate(180deg);
+    }
+  }
+  .back {
+    background-image: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png");
+    background-size: cover;
+  }
+  .paired {
+    background-color: #dae0e3;
+  }
+  .wrong {
+    animation-name: wrongAnimation;
+    animation-duration: 0.15s;
+    animation-iteration-count: 5;
+  }
+}
+
+/** Game finished **/
+.completed {
+  position: absolute;
+  z-index: 999;
+  top: 33vh;
+  background-color: RGBA(232, 246, 254, 0.8);
+  width: 100vw;
+  padding: 50px 0;
+}
+.completed > p {
+  font-size: 1.5em;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+.completed > p:first-child {
+  font-size: 3em;
+  font-weight: 700;
+  color: #758d9a;
+}
+@keyframes wrongAnimation {
+  to {
+    border: 2px solid #ffd54f;
+  }
+}

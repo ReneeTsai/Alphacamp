@@ -1,0 +1,6 @@
+牌背樣式：https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png
+黑桃花色：https://assets-lighthouse.alphacamp.co/uploads/image/file/17989/__.png
+紅心花色：https://assets-lighthouse.alphacamp.co/uploads/image/file/17992/heart.png
+方塊花色：https://assets-lighthouse.alphacamp.co/uploads/image/file/17991/diamonds.png
+梅花花色：https://assets-lighthouse.alphacamp.co/uploads/image/file/17988/__.png
+遊戲圖示：https://assets-lighthouse.alphacamp.co/uploads/image/file/17990/__.png
